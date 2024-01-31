@@ -1,0 +1,94 @@
+.main-cointainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -1vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b08059;
+  width: 100%;
+  padding: 1vw 1vw;
+  top: 0;
+}
+.logo-img{
+ width: 250px;
+ height: auto;
+}
+.logo {
+  font-size: 30px;
+  color: #ff0000;
+  margin-left: 5vw;
+}
+
+.search-bar {
+  padding: 5px;
+  border-radius: 10px;
+  width: 500px;
+  height: 40px;
+  border: 5px solid #cccccc;
+  border-radius: 8px;
+}
+
+.Register {
+  height: 50px;
+  margin-right: 50px;
+  padding: 0 20px;
+  background-color: rgb(79, 62, 177);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.List-books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.book {
+  border: 2px solid #ad4f4f;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.book h2 {
+  font-size: 1vw;
+  left: 2rem;
+  color: #333333;
+  margin-bottom: 1vw;
+
+}
+
+.book img {
+  width: 100%;
+  height: 75%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.book p {
+  margin: 5px 0;
+  font-size: 1vw;
+  color: #c44b4b;
+}
+
+.book {
+
+  border-radius: 5px;
+  padding: 0.5vw;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2vw 4vw rgba(0, 0, 0, 0.3);
+  width: 250px;
+  height: 500px;
+  padding-inline: 30px;
+}
+
+
