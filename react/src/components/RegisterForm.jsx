@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';  
+import { useNavigate } from 'react-router-dom';
 import './Register.css';
 
 function Form() {
-  const navigate = useNavigate();  
+  const navigate = useNavigate();
   const { register, handleSubmit, formState: { errors }, getValues } = useForm();
   const [registerSuccessful, setRegisterSuccessful] = useState(false);
   const [isFormEdited, setIsFormEdited] = useState(false);
@@ -16,7 +16,7 @@ function Form() {
 
     setTimeout(() => {
       navigate("/?registration=success");
-      sessionStorage.setItem("registrationSuccess", "true");  
+      sessionStorage.setItem("registrationSuccess", "true");
     }, 2000);
   };
 
@@ -43,12 +43,10 @@ function Form() {
           required: "Your Name is required!",
           minLength: {
             value: 3,
-            message: "Your Name must be more than 3 characters"
-          },
+            message: "Your Name must be more than 3 characters"},
           maxLength: {
             value: 30,
-            message: "Your Name cannot be more than 30 characters"
-          }
+            message: "Your Name cannot be more than 30 characters"}
         })} />
         {errors.fullname && <p className='error'>{errors.fullname.message}</p>}
 
@@ -58,7 +56,7 @@ function Form() {
         <input type="email" name='email' {...register("email", { required: "Email is required!", pattern: { value: /^\S+@\S+$/i, message: "Invalid Email" } })} />
         {errors.email && <p className='error'>{errors.email.message}</p>}
 
- 
+
         <label>Password :</label>
         <input type="password" name='password' {...register("password", {
           required: "Password is required",

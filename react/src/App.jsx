@@ -6,16 +6,19 @@ import './App.css';
 
 function App() {
 
+  const booksRoute = <Route path="/" element={<Books />} />;
+  const formRoute = <Route path="/form" element={<Form />} />;
+
+
   return (
     <Router>
-      <Routes>
-
-        <Route path="/" element={<Books />} />
-
-        <Route path="/form" element={<Form />} />
-      </Routes>
-    </Router>
-  );
+    <Routes>
+      {booksRoute}
+      {formRoute}
+    </Routes>
+  </Router>
+);
 }
+
 
 export default App;
